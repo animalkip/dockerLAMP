@@ -1,0 +1,47 @@
+version: '3.1'
+services:
+
+ web:
+  build: php-apache/.
+  restart: always
+  depends_on:
+  - db
+  volumes:
+  - ./www:/var/www/html
+  expose:
+  - "80"
+  environment:
+   VIRTUAL_HOST: 'web.${DOMAIN}.teamsixhosting'
+  container_name: contweb-${UID}
+
+
+ db:
+  image: mysql:${MYSQL_VERSION}
+  restart: always
+  environment:
+   MYSQL_DATABASE: 'db'
+   MYSQL_USER: '${MYSQL_USER_ENV}'
+   MYSQL_PASSWORD: '${MYSQL_PASSWORD_ENV}'
+   MYSQL_ROOT_PASSWORD: '${MYSQL_PASSWORD_ENV}'
+  expose:
+  - "3306"
+  container_name: contsql-${UID}
+  volumes:
+  - ./mysql:/var/lib/mysql
+
+ phpmyadmin:
+  image: phpmyadmin/phpmyadmin
+  expose:
+  - "80"
+  environment:
+   PMA_HOST: 'contsql-${UID}'
+   MYSQL_USER: '${MYSQL_USER_ENV}'
+   MYSQL_PASSWORD: '${MYSQL_PASSWORD_ENV}'
+   MYSQL_ROOT_PASSWORD: '${MYSQL_PASSWORD_ENV}'
+   VIRTUAL_HOST: 'phpmyadmin.${DOMAIN}.teamsixhosting'
+  container_name: contphpmyadmin-${UID}
+
+
+networks: 
+ default: 
+  name: net-hosting

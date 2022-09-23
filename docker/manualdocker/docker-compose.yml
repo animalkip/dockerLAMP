@@ -1,0 +1,52 @@
+version: '3.1'
+services:
+
+ web-web2:
+  build: php-apache/.
+  restart: always
+  depends_on:
+  - db-web2
+  volumes:
+  - ./www:/var/www/html
+  expose:
+  - "80"
+  environment:
+   VIRTUAL_HOST: 'web.website2.local'
+  container_name: contweb-web2
+
+
+ db-web2:
+  image: mysql:5.7.13
+  restart: always
+  environment:
+   MYSQL_DATABASE: 'db'
+   MYSQL_USER: 'user'
+   MYSQL_PASSWORD: 'password'
+   MYSQL_ROOT_PASSWORD: 'password'
+  expose:
+  - "3306"
+  container_name: contsql-web2
+  volumes:
+  - db_data-web2:/var/lib/mysql
+
+ phpmyadmin-web2:
+  image: phpmyadmin/phpmyadmin
+  expose:
+  - "80"
+  environment:
+   PMA_HOST: 'db-web2'
+   MYSQL_USER: 'user'
+   MYSQL_PASSWORD: 'password'
+   MYSQL_ROOT_PASSWORD: 'password'
+   VIRTUAL_HOST: 'phpmyadmin.website2.local'
+  container_name: contphpmyadmin-web2
+
+  
+
+volumes:
+ db_data-web2:
+
+networks: 
+ default: 
+  external: 
+   name: net-hosting 

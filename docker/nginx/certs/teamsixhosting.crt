@@ -1,0 +1,78 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            fc:40:9a:f7:a2:76:ee:ef:5d:ed:86:b3:d4:e3:5d:11
+        Signature Algorithm: ecdsa-with-SHA512
+        Issuer: CN=Easy-RSA CA
+        Validity
+            Not Before: May 25 14:12:46 2022 GMT
+            Not After : May  9 14:12:46 2025 GMT
+        Subject: C=BE, ST=Antwerpen, L=Geel, O=teamsixhosting, OU=teamsixhosting, CN=*.teamsixhosting/emailAddress=admin@teamsixhosting
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                RSA Public-Key: (2048 bit)
+                Modulus:
+                    00:b9:fc:55:59:b2:0f:8b:a1:39:b5:95:da:27:ca:
+                    06:46:32:0a:50:fa:23:d6:85:47:6f:8e:a1:30:4e:
+                    cb:43:39:2d:f4:74:f0:f4:7a:e8:1d:65:11:59:bc:
+                    ae:d6:f4:d0:91:06:08:7e:4e:f7:69:65:87:26:c8:
+                    dd:34:fd:68:d5:67:ed:2d:e3:b1:e5:b6:fc:fd:09:
+                    f3:5b:4f:2a:ab:46:de:d3:25:46:83:de:fc:ef:6e:
+                    d2:7e:c0:8b:92:ac:81:49:5b:5b:19:35:4e:c1:f5:
+                    57:9f:ba:e5:67:f2:9b:57:63:cf:7a:18:ed:14:da:
+                    a6:ef:bf:69:31:e0:43:8e:69:fb:5a:6b:dd:19:73:
+                    da:b0:bd:6a:4c:63:1f:d6:4d:5c:da:53:c1:07:23:
+                    d2:44:78:bf:dd:a9:18:1f:b1:f1:00:43:a9:c3:ad:
+                    83:3b:24:d3:70:e1:47:5a:98:5d:10:e5:04:42:10:
+                    06:25:b6:81:ca:0f:8a:3c:9b:1c:3e:6e:67:f4:56:
+                    47:28:1a:2a:61:d9:13:6a:ec:eb:2a:8f:e4:0a:6d:
+                    20:c8:1c:08:54:ab:99:b5:b9:77:b7:3b:0c:3f:1c:
+                    93:81:3f:3e:ab:f6:7a:7b:8f:d1:b8:9a:0f:48:ac:
+                    cd:0a:e3:00:34:15:28:57:8b:03:07:c9:ba:a1:42:
+                    44:f5
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Basic Constraints: 
+                CA:FALSE
+            X509v3 Subject Key Identifier: 
+                DA:4B:6C:27:9A:AE:2E:0D:1F:5B:63:56:C1:CC:26:20:71:67:C1:9C
+            X509v3 Authority Key Identifier: 
+                keyid:89:88:BC:37:35:46:35:54:BB:AD:D8:D9:3C:15:8A:3C:73:7F:2B:A3
+                DirName:/CN=Easy-RSA CA
+                serial:5D:01:F5:AC:B1:D5:04:A6:F5:6C:E9:FC:77:25:76:66:F9:3B:66:F1
+
+            X509v3 Extended Key Usage: 
+                TLS Web Server Authentication
+            X509v3 Key Usage: 
+                Digital Signature, Key Encipherment
+            X509v3 Subject Alternative Name: 
+                DNS:*.teamsixhosting
+    Signature Algorithm: ecdsa-with-SHA512
+         30:65:02:30:6e:24:10:17:4f:2b:5f:78:4f:40:91:9e:fa:a9:
+         cc:4b:f7:d6:db:ae:fc:41:17:ab:94:a4:b1:38:fa:94:e6:11:
+         6a:51:5e:cd:a4:e2:c8:b9:d9:6a:be:e3:c3:f0:70:60:02:31:
+         00:ff:e2:91:a0:cf:fc:28:d1:1e:27:46:8d:29:89:86:18:a8:
+         56:d8:4a:6a:07:f2:c7:9e:c0:3d:a2:b1:6b:02:e7:f1:1e:9a:
+         f1:36:63:94:37:37:bd:a4:b2:f1:e1:7c:08
+-----BEGIN CERTIFICATE-----
+MIIDYzCCAumgAwIBAgIRAPxAmveidu7vXe2Gs9TjXREwCgYIKoZIzj0EAwQwFjEU
+MBIGA1UEAwwLRWFzeS1SU0EgQ0EwHhcNMjIwNTI1MTQxMjQ2WhcNMjUwNTA5MTQx
+MjQ2WjCBojELMAkGA1UEBhMCQkUxEjAQBgNVBAgMCUFudHdlcnBlbjENMAsGA1UE
+BwwER2VlbDEXMBUGA1UECgwOdGVhbXNpeGhvc3RpbmcxFzAVBgNVBAsMDnRlYW1z
+aXhob3N0aW5nMRkwFwYDVQQDDBAqLnRlYW1zaXhob3N0aW5nMSMwIQYJKoZIhvcN
+AQkBFhRhZG1pbkB0ZWFtc2l4aG9zdGluZzCCASIwDQYJKoZIhvcNAQEBBQADggEP
+ADCCAQoCggEBALn8VVmyD4uhObWV2ifKBkYyClD6I9aFR2+OoTBOy0M5LfR08PR6
+6B1lEVm8rtb00JEGCH5O92llhybI3TT9aNVn7S3jseW2/P0J81tPKqtG3tMlRoPe
+/O9u0n7Ai5KsgUlbWxk1TsH1V5+65Wfym1djz3oY7RTapu+/aTHgQ45p+1pr3Rlz
+2rC9akxjH9ZNXNpTwQcj0kR4v92pGB+x8QBDqcOtgzsk03DhR1qYXRDlBEIQBiW2
+gcoPijybHD5uZ/RWRygaKmHZE2rs6yqP5AptIMgcCFSrmbW5d7c7DD8ck4E/Pqv2
+enuP0biaD0iszQrjADQVKFeLAwfJuqFCRPUCAwEAAaOBvzCBvDAJBgNVHRMEAjAA
+MB0GA1UdDgQWBBTaS2wnmq4uDR9bY1bBzCYgcWfBnDBRBgNVHSMESjBIgBSJiLw3
+NUY1VLut2Nk8FYo8c38ro6EapBgwFjEUMBIGA1UEAwwLRWFzeS1SU0EgQ0GCFF0B
+9ayx1QSm9Wzp/Hcldmb5O2bxMBMGA1UdJQQMMAoGCCsGAQUFBwMBMAsGA1UdDwQE
+AwIFoDAbBgNVHREEFDASghAqLnRlYW1zaXhob3N0aW5nMAoGCCqGSM49BAMEA2gA
+MGUCMG4kEBdPK194T0CRnvqpzEv31tuu/EEXq5SksTj6lOYRalFezaTiyLnZar7j
+w/BwYAIxAP/ikaDP/CjRHidGjSmJhhioVthKagfyx57APaKxawLn8R6a8TZjlDc3
+vaSy8eF8CA==
+-----END CERTIFICATE-----
